@@ -8,7 +8,7 @@
         <init-param>
         <!-- This init params will look after the class resources with the help of package name -->
             <param-name>jersey.config.server.provider.packages</param-name>
-            <param-value>com.demoproject.webservice.DemoProjectDatabase</param-value>
+            <param-value>com.demoproject.webservice.service</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
