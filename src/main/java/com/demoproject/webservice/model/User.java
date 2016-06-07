@@ -6,24 +6,27 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.xml.bind.annotation.XmlAccessorOrder;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-import org.hibernate.annotations.GeneratorType;
+
 
 /**
  * 
  * @author dahule
  *
  */
+@XmlRootElement(name = "users")
 @Entity
 @Table(name = "users")
-@XmlRootElement(name = "users")
 @XmlType(propOrder = {"id", "user_name", "user_pass"})
 public class User {
 	
 
+	public User() {
+		super();
+	}
+	
 	public User(String id, String username, String password) {
 		super();
 		this.id = id;
