@@ -28,9 +28,9 @@ public class LoginService {
 	
 	@GET
 	@Path("/users")
-	@Produces(MediaType.APPLICATION_XML)
-	public  List<User> getAllUers(){
-		return userDao.getTestm();
+	@Produces(MediaType.TEXT_PLAIN)
+	public  String getAllUers(){
+		return "Hello world";
 		
 	}
 	
